@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "13a2",
+      "name": "iPhone 14",
+      "description": "Apple smartphone",
+      "price": 999.99
+    },
+    {
+      "id": "44b7",
+      "name": "iPhone 16",
+      "description": "Apple smartphone",
+      "price": 1999.99
+    }
+  ]
+}
