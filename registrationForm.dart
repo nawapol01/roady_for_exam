@@ -103,14 +103,11 @@ class _RegistrationFormState extends State<RegistrationForm> {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  if (_formKey.currentState!.validate() && _acceptedTerms) {
-                    _formKey.currentState!.save();
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Registration completed')),
-                    );
+                  if (_formKey.currentState!.validate()) {
+                    print('Form is valid');
                   }
                 },
-                child: Text('Submit'),
+                child: Text('คำนวณราคา'),
               ),
             ],
           ),

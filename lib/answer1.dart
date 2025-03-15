@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class ans1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,9 +16,10 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Center(
-            child: Text('My profile', style: TextStyle(color: Colors.white))),
-        backgroundColor: const Color.fromARGB(255, 255, 255, 68),
+        title: (Text(
+          'โปรไฟล์ผู้ใช้',
+        )),
+        backgroundColor: const Color.fromARGB(255, 46, 102, 255),
         elevation: 0,
       ),
       body: Center(
@@ -43,29 +40,47 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'ชื่อ: นวพล อินพุ่ม',
+                  'ชื่อผู้ใช้: นวพล อินพุ่ม',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  'ชื่อเล่น: นัท',
+                  'อีเมล:nutnawa00@gmail.com',
                   style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                 ),
                 SizedBox(height: 10),
+                ListTile(
+                  leading: Icon(Icons.settings, color: Colors.blue),
+                  title: Text("การตั้งค่า"),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.password_rounded, color: Colors.blue),
+                  title: Text("เปลี่ยนรหัสผ่าน"),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.safety_check, color: Colors.blue),
+                  title: Text("ความเป็นส่วนตัว"),
+                  onTap: () {},
+                ),
+                SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.email,
-                        color: const Color.fromARGB(255, 255, 134, 68)),
-                    SizedBox(width: 5),
-                    Text('nutnawa00@gmail.com'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('แก้ไขโปรไฟล์'),
+                    ),
                   ],
                 ),
+                SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.phone, color: Colors.green),
-                    SizedBox(width: 5),
-                    Text('0806636493'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('ออกจากระบบ'),
+                    ),
                   ],
                 ),
               ],
